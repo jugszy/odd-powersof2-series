@@ -1,0 +1,14 @@
+#TCS offcampus 2018 coding question
+#A series wherein odd places contain odd numbers starting from 1 and even numbers contain powers of two starting from 1.
+#n here is the place of which the output will be provided.
+
+def Series(n):
+	li = []
+	for i in range(1,n+1):
+		if i % 2 != 0:
+			li.append(i)
+		else:
+			li.append(2**(i//2))
+	print(li[n-1])
+
+Series(14)
